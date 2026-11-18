@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this replication repository, please cite the associated manuscript and this repository."
+title: "Replication materials for Russia's Post-2022 Trade Reorientation and Re-Concentration"
+type: software
+authors:
+  - family-names: "Jung"
+    given-names: "Nak Hyun"
+year: 2026
+repository-code: "REPLACE_WITH_GITHUB_REPOSITORY_URL"

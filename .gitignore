@@ -1,0 +1,10 @@
+# Raw / large source data
+BACI_HS12_V202601.zip
+data/raw/
+*.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Optional local artifacts
+*.log
