@@ -1,147 +1,115 @@
-# Russia's Post-2022 Trade Reorientation and Re-Concentration
+# Russia Trade Re-Concentration after 2022
 
-Replication code, derived analytical data, tables, and figures for a structural empirical study of Russia's post-2022 trade reorientation.
+Reproducibility repository for the manuscript:
 
-## Research focus
+**Trade Reorientation and Partner Re-Concentration in Russia after 2022: China-Centered Import Re-Concentration, Export-Market Reorientation, and Asymmetric Trade Exposure**
 
-The study examines whether Russia's post-2022 trade adjustment was associated with broad diversification or with renewed concentration on a smaller set of trading partners.
-
-The empirical design is **non-causal**. It characterizes structural change rather than estimating the causal effect of sanctions.
-
-The core analytical sequence is:
-
-`Post-2022 trade reorientation → partner re-concentration → asymmetric bilateral trade exposure`
-
-## Data source
-
-The analysis uses **CEPII BACI, HS2012, Version 202601**, for 2015–2024.
-
-Raw BACI data are not redistributed in this repository. Download the original source archive from CEPII:
-
-https://www.cepii.fr/DATA_DOWNLOAD/baci/doc/baci_webpage.html#download-links
-
-Required raw file:
-
-`BACI_HS12_V202601.zip`
-
-## Study periods
-
-- Full sample: 2015–2024
-- Pre-period: 2019–2021
-- Adjustment year: 2022
-- Post-period: 2023–2024
-
-## Main analyses
-
-- Partner-share trajectories
-- HHI, CR1, CR3, Shannon entropy, and effective number of partners
-- China specificity relative to India and Türkiye
-- HS6-level dependence thresholds
-- Non-energy robustness
-- Crude-oil value–quantity robustness
-- Bilateral Russia–China trade exposure gap
-- Exploratory structural-break screening
-- HS6-level Wilcoxon, bootstrap, permutation, and effect-size analysis
-- HS6-level EU27 decline vs China increase correlation
+This repository contains the analysis notebook, derived tables and figures, robustness outputs, and the submission-ready manuscript. The study uses CEPII BACI V202601 (HS2012) bilateral merchandise-trade data for 2015–2024 and evaluates Russia's post-2022 trade reorientation as a descriptive structural and distributional change rather than as a causal effect of sanctions.
 
 ## Repository structure
 
 ```text
-russia-trade-reconcentration/
+.
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
-├── code/
-│   ├── Russia_Trade_Master_AllInOne_Colab.ipynb
-│   ├── 01_BACI_Russia_Extractor_Colab.ipynb
-│   └── 02_Russia_HS6_Statistical_Analysis_Colab.ipynb
 ├── data/
-│   ├── README.md
-│   └── derived/
-│       ├── russia_import_partner_hs6_year.parquet
-│       ├── russia_export_partner_hs6_year.parquet
-│       ├── russia_import_hs6_year_summary.parquet
-│       ├── russia_export_hs6_year_summary.parquet
-│       ├── china_world_trade_year.parquet
-│       └── metadata.json
-├── results/
-│   ├── Russia_Trade_Master_Final_Results.xlsx
+│   └── README.md
+├── notebooks/
+│   └── Russia_Trade_Master_AllInOne.ipynb
+├── outputs/
 │   ├── analysis_metadata.json
 │   ├── tables/
-│   └── figures/
-└── docs/
-    ├── analysis_design.md
-    ├── variable_dictionary.md
-    └── replication_instructions.md
+│   ├── figures/
+│   ├── Russia_Trade_Master_Final_Results.xlsx
+│   └── Russia_Trade_Master_Robustness_Results.xlsx
+└── manuscript/
+    └── Russia_Trade_Reconcentration_Manuscript.docx
 ```
 
-## Reproduce everything in one run
+## Main reproducibility workflow
 
-The recommended workflow is:
+The master notebook is designed for Google Colab/Python and searches for input data in the following order:
 
-`code/Russia_Trade_Master_AllInOne_Colab.ipynb`
+1. `Russia_BACI_Lite_Dataset.zip` — a study-specific lightweight dataset created from the official BACI archive; or
+2. `BACI_HS12_V202601.zip` — the official CEPII BACI V202601 HS2012 archive.
 
-### From the raw BACI archive
+In Colab, upload one of the above ZIP files or place it in a mounted Google Drive location recognized by the notebook. Run the notebook from top to bottom. It creates the derived tables, figures, Excel workbooks, and consistency-audit outputs.
 
-1. Download `BACI_HS12_V202601.zip` from CEPII.
-2. Put the file in `/content/BACI/` or `/content/drive/MyDrive/BACI/`.
-3. Open the master notebook in Google Colab.
-4. Run all cells.
-5. The notebook automatically extracts the Russia-specific Lite dataset, runs T1–T8, performs HS6 statistical inference, and creates all tables and figures.
+## Data availability and redistribution
 
-### From the Lite analytical dataset
+The original CEPII BACI files are **not included in this repository**. Users should obtain BACI V202601 directly from CEPII and comply with CEPII's applicable data-use terms. The repository contains only code and derived analysis outputs used for reproducibility.
 
-If a local `Russia_BACI_Lite_Dataset.zip` is available, the master notebook detects it first and skips the raw-data extraction step.
+The Bank of Russia balance-of-payments merchandise-import values used for denominator sensitivity are pinned to a single publication vintage in the submission-ready notebook:
 
-## Main output files
+- 2021: USD 301.047 billion
+- 2023: USD 303.086 billion
+- 2024: USD 301.548 billion
 
-`results/tables/` includes:
+These values are used only as a denominator-sensitivity bound because balance-of-payments merchandise imports and BACI customs-based trade are not conceptually identical.
 
-- partner-share summaries
-- concentration indices
-- HS6 dependence counts
-- non-energy robustness
-- crude-oil value/quantity results
-- bilateral exposure-gap results
-- structural-break screening
-- HS6 statistical tests
-- final consistency audit
+## Analysis windows
 
-`results/figures/` includes:
+- Full descriptive period: 2015–2024
+- Pre period: 2019–2021
+- Adjustment year: 2022
+- Post period: 2023–2024
 
-- import partner shares
-- HHI
-- effective number of partners
-- high-dependence HS6 counts
-- HS6 China-share change distribution
-- HS6 EU27-vs-China share-change scatter
-- bilateral exposure gap
+For the BoP denominator sensitivity, 2021 is the available pre benchmark used against the 2023–2024 post average. This is intentionally distinct from the main 2019–2021 BACI pre-period average and is documented in the notebook and manuscript.
 
-## Statistical inference
+## Main outputs
 
-The HS6 analysis reports:
+The notebook reproduces:
 
-- Wilcoxon signed-rank tests
-- Bootstrap 95% confidence intervals
-- Sign-flip permutation tests
-- Rank-biserial effect sizes
+- partner-share and concentration measures: HHI, CR1/CR3, Shannon entropy, effective number of partners;
+- HS6-level pre/post distributional statistics;
+- Wilcoxon signed-rank, bootstrap, sign-flip permutation, and rank-biserial effect-size results;
+- HS4-cluster bootstrap confidence intervals;
+- balanced-partner robustness checks for post-2022 reporting discontinuity;
+- Bank of Russia denominator-sensitivity bounds and BACI/BoP coverage ratios;
+- BoP-denominator sensitivity for the Russia–China import-side exposure gap;
+- extreme China-dependence thresholds at 50%, 70%, and 90%;
+- EU27-decline/China-increase absorption diagnostics;
+- energy/non-energy decomposition of exports to China and India;
+- figures and final consistency-audit tables.
 
-These tests assess whether the post-2022 structural changes are systematic across products. They should not be interpreted as causal estimates.
+## Key robustness interpretation
 
-## Reproducibility note
+The direction of China-centered Russian import re-concentration is robust, while its estimated magnitude depends on the denominator definition. The submission-ready manuscript distinguishes the approximately +29.8 percentage-point BACI-observed change, +28.0 percentage-point balanced-partner change, and the smaller BoP-denominator sensitivity estimate. The same principle is applied to the import-side bilateral exposure-gap result.
 
-The repository contains the code, generated result tables, figures, and a Russia-specific derived analytical dataset. The original 1.2GB BACI archive is excluded.
+## Software environment
 
-Before public release, confirm that redistribution of the derived BACI extracts in `data/derived/` is compatible with the applicable CEPII/UN Comtrade terms. If not, delete `data/derived/`; the extractor notebook reproduces it from the official raw BACI archive.
+Tested for a standard recent Google Colab/Python environment. Install required packages with:
+
+```bash
+pip install -r requirements.txt
+```
+
+The notebook also uses `google.colab` when executed in Colab; this module does not need to be installed separately in the Colab runtime.
+
+## Publication-ready tables and figures
+
+For a reviewer-friendly view that mirrors the final manuscript numbering, use [`publication/`](publication/README.md). It contains:
+
+- `publication/tables/Table_01.csv` through `Table_15.csv`, extracted directly from the final manuscript;
+- `publication/figures/Figure_01.png` through `Figure_12.png`, mapped exactly to the manuscript figure numbering; and
+- `publication/KEY_RESULTS.md`, a concise navigation guide to the principal findings and robustness quantities.
+
+The original computational outputs remain under `outputs/` for full traceability.
+
+## Reproducibility notes
+
+- Randomized procedures use the seed specified in the notebook.
+- Raw BACI data are not redistributed.
+- 2022 is treated as an adjustment year and excluded from the main pre/post averages.
+- The study is descriptive/structural and does not claim causal identification of sanctions.
+- Segmented-regression break screening is retained only as exploratory output because the annual time series is too short for strong formal break inference.
 
 ## Citation
 
-If this repository is associated with a published article, replace this section with the final article citation and DOI.
+If this repository is used in academic work, please cite the associated manuscript and CEPII BACI source. Update this section with the final journal citation/DOI after publication.
 
-Suggested repository citation before publication:
+## Version
 
-> Jung, N. H., et al. Replication materials for *Russia's Post-2022 Trade Reorientation and Re-Concentration*. GitHub repository, 2026.
-
-## License
-
-No software or data license has been assigned in this package. Select an appropriate license before making the repository public. A common choice for code is MIT, while data redistribution rights should be evaluated separately.
+GitHub release package: **v1.0-reproducibility**  
+Prepared from manuscript v4 and master notebook v3 (submission-ready).
