@@ -52,3 +52,7 @@ The CSV files under `tables/` are extracted directly from the final DOCX manuscr
 - HS4-cluster bootstrap 95% CI for the mean HS6 China import-share change: **[22.54, 25.33] percentage points**.
 
 For computational source files and diagnostic outputs, use `outputs/tables/` and `outputs/figures/`.
+
+
+### RQ3 interpretation note
+The manuscript treats the percentage-point difference as the primary exposure-gap measure. BACI-based ratio/log-ratio also rise, but under the BoP denominator the ratio and log-ratio change only slightly; therefore the cross-denominator conclusion is limited to widening of the absolute percentage-point gap.

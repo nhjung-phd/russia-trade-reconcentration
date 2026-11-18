@@ -75,7 +75,7 @@ The notebook reproduces:
 
 ## Key robustness interpretation
 
-The direction of China-centered Russian import re-concentration is robust, while its estimated magnitude depends on the denominator definition. The submission-ready manuscript distinguishes the approximately +29.8 percentage-point BACI-observed change, +28.0 percentage-point balanced-partner change, and the smaller BoP-denominator sensitivity estimate. The same principle is applied to the import-side bilateral exposure-gap result.
+The direction of China-centered Russian import re-concentration is robust, while its estimated magnitude depends on the denominator definition. The submission-ready manuscript distinguishes the approximately +29.8 percentage-point BACI-observed change, +28.0 percentage-point balanced-partner change, and the smaller BoP-denominator sensitivity estimate. For the import-side bilateral exposure result, the robust conclusion is limited to the widening of the absolute percentage-point difference; under the BoP denominator, ratio and log-ratio change only slightly.
 
 ## Software environment
 
@@ -111,5 +111,14 @@ If this repository is used in academic work, please cite the associated manuscri
 
 ## Version
 
-GitHub release package: **v1.0-reproducibility**  
-Prepared from manuscript v4 and master notebook v3 (submission-ready).
+GitHub release package: **v1.4-reproducibility**  
+Prepared from the submission-ready manuscript and master notebook. The notebook is intentionally distributed without saved cell outputs.
+
+
+## Verified external references for this release
+
+- Kolaja (2026) was verified as an online-first article in *Post-Communist Economies* (published online 3 November 2026; DOI 10.1080/14631377.2026.2757270).
+- Głodowska et al. (2026) was verified in *The World Economy*, 49(8), 1692–1709 (DOI 10.1111/twec.70110).
+- Bank of Russia BoP values were verified against *Russia’s Balance of Payments in 2019–2025 (Analytical Presentation)* (2026), Table 2; the direct source URL is recorded in the manuscript and data documentation.
+- Gutmann et al. (2024) was verified as covering trade flows of 187 countries during 2002–2019 (DOI 10.1111/roie.12716).
+- Detailed publisher/source verification notes are stored in `docs/REFERENCE_VERIFICATION.md`.
