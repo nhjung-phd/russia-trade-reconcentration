@@ -1,0 +1,866 @@
+[
+  {
+    "path": ".gitignore",
+    "size_bytes": 203
+  },
+  {
+    "path": "CITATION.cff",
+    "size_bytes": 435
+  },
+  {
+    "path": "README.md",
+    "size_bytes": 3329
+  },
+  {
+    "path": "RELEASE_NOTES_v4.0.md",
+    "size_bytes": 695
+  },
+  {
+    "path": "VERSION",
+    "size_bytes": 16
+  },
+  {
+    "path": "data/README.md",
+    "size_bytes": 950
+  },
+  {
+    "path": "data/Russia_BACI_Lite_Dataset.zip",
+    "size_bytes": 28305020
+  },
+  {
+    "path": "docs/DATA_AND_CODE_AVAILABILITY.md",
+    "size_bytes": 1444
+  },
+  {
+    "path": "docs/REPRODUCIBILITY.md",
+    "size_bytes": 1171
+  },
+  {
+    "path": "docs/RESULTS_SUMMARY.md",
+    "size_bytes": 1567
+  },
+  {
+    "path": "manuscript/Russia_Trade_Reconcentration_KR_Ordo_Final_NoDID.docx",
+    "size_bytes": 4679018
+  },
+  {
+    "path": "notebooks/Russia_Trade_Full_AllInOne_NoDID.ipynb",
+    "size_bytes": 111461
+  },
+  {
+    "path": "notebooks/Russia_Trade_Full_AllInOne_NoDID_executed.ipynb",
+    "size_bytes": 1597173
+  },
+  {
+    "path": "requirements.txt",
+    "size_bytes": 86
+  },
+  {
+    "path": "results/FULL_ANALYSIS_METADATA.json",
+    "size_bytes": 597
+  },
+  {
+    "path": "results/FULL_OUTPUT_INVENTORY.csv",
+    "size_bytes": 11443
+  },
+  {
+    "path": "results/P1_export_FE_summary.txt",
+    "size_bytes": 3233
+  },
+  {
+    "path": "results/P1_export_RE_summary.txt",
+    "size_bytes": 3134
+  },
+  {
+    "path": "results/P1_import_FE_summary.txt",
+    "size_bytes": 3233
+  },
+  {
+    "path": "results/P1_import_RE_summary.txt",
+    "size_bytes": 3134
+  },
+  {
+    "path": "results/P3_export_china_event_profile_summary.txt",
+    "size_bytes": 2825
+  },
+  {
+    "path": "results/P3_export_eu27_event_profile_summary.txt",
+    "size_bytes": 2825
+  },
+  {
+    "path": "results/P3_import_china_event_profile_summary.txt",
+    "size_bytes": 2825
+  },
+  {
+    "path": "results/P3_import_eu27_event_profile_summary.txt",
+    "size_bytes": 2825
+  },
+  {
+    "path": "results/P4_export_PPML_HDFE_summary.txt",
+    "size_bytes": 68
+  },
+  {
+    "path": "results/P4_import_PPML_HDFE_summary.txt",
+    "size_bytes": 68
+  },
+  {
+    "path": "results/PANEL_METHOD_NOTES.md",
+    "size_bytes": 745
+  },
+  {
+    "path": "results/Russia_Trade_Master_Final_Results.xlsx",
+    "size_bytes": 31015
+  },
+  {
+    "path": "results/Russia_Trade_Master_Robustness_Results.xlsx",
+    "size_bytes": 20566
+  },
+  {
+    "path": "results/Russia_Trade_Panel_Robustness_Results.xlsx",
+    "size_bytes": 19042
+  },
+  {
+    "path": "results/analysis_metadata.json",
+    "size_bytes": 899
+  },
+  {
+    "path": "results/figures/Figure1_Import_Partner_Shares.png",
+    "size_bytes": 198323
+  },
+  {
+    "path": "results/figures/Figure2_Trade_Concentration_HHI.png",
+    "size_bytes": 137368
+  },
+  {
+    "path": "results/figures/Figure2b_Effective_Number_of_Partners.png",
+    "size_bytes": 178072
+  },
+  {
+    "path": "results/figures/Figure3_High_Dependence_HS6_Counts.png",
+    "size_bytes": 195609
+  },
+  {
+    "path": "results/figures/Figure4_HS6_China_Share_Change_Distribution.png",
+    "size_bytes": 105651
+  },
+  {
+    "path": "results/figures/Figure5_HS6_EU_vs_China_Scatter.png",
+    "size_bytes": 980996
+  },
+  {
+    "path": "results/figures/Figure6_Bilateral_Exposure_Gap.png",
+    "size_bytes": 181280
+  },
+  {
+    "path": "results/figures/Figure_P3_Export_China_EventProfile.png",
+    "size_bytes": 150728
+  },
+  {
+    "path": "results/figures/Figure_P3_Export_EU27_EventProfile.png",
+    "size_bytes": 169208
+  },
+  {
+    "path": "results/figures/Figure_P3_Import_China_EventProfile.png",
+    "size_bytes": 147867
+  },
+  {
+    "path": "results/figures/Figure_P3_Import_EU27_EventProfile.png",
+    "size_bytes": 162807
+  },
+  {
+    "path": "results/figures/Figure_R1_Partner_Coverage.png",
+    "size_bytes": 171527
+  },
+  {
+    "path": "results/figures/Figure_R2_Balanced_China_Share.png",
+    "size_bytes": 81962
+  },
+  {
+    "path": "results/figures/Figure_R4_Extreme_Dependence_Balanced.png",
+    "size_bytes": 176018
+  },
+  {
+    "path": "results/figures/Figure_R5_Export_Sign_Decomposition.png",
+    "size_bytes": 92554
+  },
+  {
+    "path": "results/figures/Figure_R7_EU_China_Absorption.png",
+    "size_bytes": 1054739
+  },
+  {
+    "path": "results/figures/Figure_R8_Export_Energy_Intensity.png",
+    "size_bytes": 175585
+  },
+  {
+    "path": "results/panel_analysis_metadata.json",
+    "size_bytes": 454
+  },
+  {
+    "path": "results/publication/FIGURE_INDEX.md",
+    "size_bytes": 516
+  },
+  {
+    "path": "results/publication/Russia_Trade_Panel_Publication_Tables.xlsx",
+    "size_bytes": 15757
+  },
+  {
+    "path": "results/publication/all_figures/Figure1_Import_Partner_Shares.png",
+    "size_bytes": 198323
+  },
+  {
+    "path": "results/publication/all_figures/Figure2_Trade_Concentration_HHI.png",
+    "size_bytes": 137368
+  },
+  {
+    "path": "results/publication/all_figures/Figure2b_Effective_Number_of_Partners.png",
+    "size_bytes": 178072
+  },
+  {
+    "path": "results/publication/all_figures/Figure3_High_Dependence_HS6_Counts.png",
+    "size_bytes": 195609
+  },
+  {
+    "path": "results/publication/all_figures/Figure4_HS6_China_Share_Change_Distribution.png",
+    "size_bytes": 105651
+  },
+  {
+    "path": "results/publication/all_figures/Figure5_HS6_EU_vs_China_Scatter.png",
+    "size_bytes": 980996
+  },
+  {
+    "path": "results/publication/all_figures/Figure6_Bilateral_Exposure_Gap.png",
+    "size_bytes": 181280
+  },
+  {
+    "path": "results/publication/all_figures/Figure_Balanced_PrePost_Export.png",
+    "size_bytes": 119107
+  },
+  {
+    "path": "results/publication/all_figures/Figure_Balanced_PrePost_Import.png",
+    "size_bytes": 117025
+  },
+  {
+    "path": "results/publication/all_figures/Figure_FE_Export.png",
+    "size_bytes": 91578
+  },
+  {
+    "path": "results/publication/all_figures/Figure_FE_Import.png",
+    "size_bytes": 94272
+  },
+  {
+    "path": "results/publication/all_figures/Figure_FE_RE_Comparison_Export.png",
+    "size_bytes": 155165
+  },
+  {
+    "path": "results/publication/all_figures/Figure_FE_RE_Comparison_Import.png",
+    "size_bytes": 158624
+  },
+  {
+    "path": "results/publication/all_figures/Figure_P3_Export_China_EventProfile.png",
+    "size_bytes": 150728
+  },
+  {
+    "path": "results/publication/all_figures/Figure_P3_Export_EU27_EventProfile.png",
+    "size_bytes": 169208
+  },
+  {
+    "path": "results/publication/all_figures/Figure_P3_Import_China_EventProfile.png",
+    "size_bytes": 147867
+  },
+  {
+    "path": "results/publication/all_figures/Figure_P3_Import_EU27_EventProfile.png",
+    "size_bytes": 162807
+  },
+  {
+    "path": "results/publication/all_figures/Figure_PPML_HDFE_Export.png",
+    "size_bytes": 87469
+  },
+  {
+    "path": "results/publication/all_figures/Figure_PPML_HDFE_Import.png",
+    "size_bytes": 88287
+  },
+  {
+    "path": "results/publication/all_figures/Figure_R1_Partner_Coverage.png",
+    "size_bytes": 171527
+  },
+  {
+    "path": "results/publication/all_figures/Figure_R2_Balanced_China_Share.png",
+    "size_bytes": 81962
+  },
+  {
+    "path": "results/publication/all_figures/Figure_R4_Extreme_Dependence_Balanced.png",
+    "size_bytes": 176018
+  },
+  {
+    "path": "results/publication/all_figures/Figure_R5_Export_Sign_Decomposition.png",
+    "size_bytes": 92554
+  },
+  {
+    "path": "results/publication/all_figures/Figure_R7_EU_China_Absorption.png",
+    "size_bytes": 1054739
+  },
+  {
+    "path": "results/publication/all_figures/Figure_R8_Export_Energy_Intensity.png",
+    "size_bytes": 175585
+  },
+  {
+    "path": "results/publication/all_figures/panel_Figure_P3_Export_China_EventProfile.png",
+    "size_bytes": 150728
+  },
+  {
+    "path": "results/publication/all_figures/panel_Figure_P3_Export_EU27_EventProfile.png",
+    "size_bytes": 169208
+  },
+  {
+    "path": "results/publication/all_figures/panel_Figure_P3_Import_China_EventProfile.png",
+    "size_bytes": 147867
+  },
+  {
+    "path": "results/publication/all_figures/panel_Figure_P3_Import_EU27_EventProfile.png",
+    "size_bytes": 162807
+  },
+  {
+    "path": "results/publication/all_tables/China_EU_change_correlation.csv",
+    "size_bytes": 142
+  },
+  {
+    "path": "results/publication/all_tables/FINAL_CONSISTENCY_AUDIT.csv",
+    "size_bytes": 462
+  },
+  {
+    "path": "results/publication/all_tables/HS6_export_prepost_changes.csv",
+    "size_bytes": 873665
+  },
+  {
+    "path": "results/publication/all_tables/HS6_import_prepost_changes.csv",
+    "size_bytes": 1058125
+  },
+  {
+    "path": "results/publication/all_tables/HS6_nonenergy_statistical_tests.csv",
+    "size_bytes": 1012
+  },
+  {
+    "path": "results/publication/all_tables/HS6_statistical_tests.csv",
+    "size_bytes": 1750
+  },
+  {
+    "path": "results/publication/all_tables/P1_FE_RE_all_coefficients.csv",
+    "size_bytes": 9104
+  },
+  {
+    "path": "results/publication/all_tables/P1_export_balanced_partner_panel.csv",
+    "size_bytes": 78393
+  },
+  {
+    "path": "results/publication/all_tables/P1_export_partner_FE.csv",
+    "size_bytes": 2300
+  },
+  {
+    "path": "results/publication/all_tables/P1_export_partner_RE.csv",
+    "size_bytes": 2347
+  },
+  {
+    "path": "results/publication/all_tables/P1_import_balanced_partner_panel.csv",
+    "size_bytes": 66262
+  },
+  {
+    "path": "results/publication/all_tables/P1_import_partner_FE.csv",
+    "size_bytes": 2308
+  },
+  {
+    "path": "results/publication/all_tables/P1_import_partner_RE.csv",
+    "size_bytes": 2359
+  },
+  {
+    "path": "results/publication/all_tables/P2_Hausman_FE_vs_RE.csv",
+    "size_bytes": 505
+  },
+  {
+    "path": "results/publication/all_tables/P3_HS6_event_profiles_all.csv",
+    "size_bytes": 6088
+  },
+  {
+    "path": "results/publication/all_tables/P3_export_china_event_profile.csv",
+    "size_bytes": 1616
+  },
+  {
+    "path": "results/publication/all_tables/P3_export_eu27_event_profile.csv",
+    "size_bytes": 1604
+  },
+  {
+    "path": "results/publication/all_tables/P3_import_china_event_profile.csv",
+    "size_bytes": 1615
+  },
+  {
+    "path": "results/publication/all_tables/P3_import_eu27_event_profile.csv",
+    "size_bytes": 1586
+  },
+  {
+    "path": "results/publication/all_tables/P4_PPML_HDFE_all.csv",
+    "size_bytes": 1299
+  },
+  {
+    "path": "results/publication/all_tables/P4_export_PPML_HDFE.csv",
+    "size_bytes": 700
+  },
+  {
+    "path": "results/publication/all_tables/P4_import_PPML_HDFE.csv",
+    "size_bytes": 680
+  },
+  {
+    "path": "results/publication/all_tables/PANEL_ROBUSTNESS_SUMMARY.csv",
+    "size_bytes": 3121
+  },
+  {
+    "path": "results/publication/all_tables/R1_coverage_by_year.csv",
+    "size_bytes": 973
+  },
+  {
+    "path": "results/publication/all_tables/R2_balanced_partner_robustness.csv",
+    "size_bytes": 6681
+  },
+  {
+    "path": "results/publication/all_tables/R2_export_balanced_by_year.csv",
+    "size_bytes": 1484
+  },
+  {
+    "path": "results/publication/all_tables/R2_import_balanced_by_year.csv",
+    "size_bytes": 1481
+  },
+  {
+    "path": "results/publication/all_tables/R3_bop_denominator_bound.csv",
+    "size_bytes": 353
+  },
+  {
+    "path": "results/publication/all_tables/R3_bop_exposure_gap_prepost.csv",
+    "size_bytes": 234
+  },
+  {
+    "path": "results/publication/all_tables/R3_bop_exposure_gap_sensitivity.csv",
+    "size_bytes": 374
+  },
+  {
+    "path": "results/publication/all_tables/R4_dependence_counts_balanced.csv",
+    "size_bytes": 1073
+  },
+  {
+    "path": "results/publication/all_tables/R4_dependence_prepost_balanced.csv",
+    "size_bytes": 803
+  },
+  {
+    "path": "results/publication/all_tables/R5_sign_decomposition.csv",
+    "size_bytes": 625
+  },
+  {
+    "path": "results/publication/all_tables/R6_hs4_cluster_bootstrap.csv",
+    "size_bytes": 612
+  },
+  {
+    "path": "results/publication/all_tables/R7_eu_to_china_absorption.csv",
+    "size_bytes": 210
+  },
+  {
+    "path": "results/publication/all_tables/R8_export_energy_by_year.csv",
+    "size_bytes": 2596
+  },
+  {
+    "path": "results/publication/all_tables/R8_export_energy_decomposition.csv",
+    "size_bytes": 1957
+  },
+  {
+    "path": "results/publication/all_tables/T1_export_partner_shares.csv",
+    "size_bytes": 1096
+  },
+  {
+    "path": "results/publication/all_tables/T1_import_partner_shares.csv",
+    "size_bytes": 1103
+  },
+  {
+    "path": "results/publication/all_tables/T1_prepost_summary.csv",
+    "size_bytes": 763
+  },
+  {
+    "path": "results/publication/all_tables/T2_concentration_summary.csv",
+    "size_bytes": 933
+  },
+  {
+    "path": "results/publication/all_tables/T2_export_concentration_by_year.csv",
+    "size_bytes": 1046
+  },
+  {
+    "path": "results/publication/all_tables/T2_import_concentration_by_year.csv",
+    "size_bytes": 1040
+  },
+  {
+    "path": "results/publication/all_tables/T3_china_specificity.csv",
+    "size_bytes": 467
+  },
+  {
+    "path": "results/publication/all_tables/T4_HS6_dependence_by_year.csv",
+    "size_bytes": 902
+  },
+  {
+    "path": "results/publication/all_tables/T4_HS6_dependence_prepost.csv",
+    "size_bytes": 447
+  },
+  {
+    "path": "results/publication/all_tables/T5_nonenergy_prepost.csv",
+    "size_bytes": 863
+  },
+  {
+    "path": "results/publication/all_tables/T6_annual_energy_to_china.csv",
+    "size_bytes": 536
+  },
+  {
+    "path": "results/publication/all_tables/T6_crude_oil_value_quantity.csv",
+    "size_bytes": 315
+  },
+  {
+    "path": "results/publication/all_tables/T7_exposure_gap_by_year.csv",
+    "size_bytes": 2326
+  },
+  {
+    "path": "results/publication/all_tables/T7_exposure_gap_prepost.csv",
+    "size_bytes": 491
+  },
+  {
+    "path": "results/publication/all_tables/T8_best_breaks.csv",
+    "size_bytes": 568
+  },
+  {
+    "path": "results/publication/all_tables/T8_break_screening.csv",
+    "size_bytes": 3034
+  },
+  {
+    "path": "results/publication/all_tables/Table_EventProfiles.csv",
+    "size_bytes": 6088
+  },
+  {
+    "path": "results/publication/all_tables/Table_Export_Balanced_PrePost.csv",
+    "size_bytes": 237
+  },
+  {
+    "path": "results/publication/all_tables/Table_FE_Core.csv",
+    "size_bytes": 1303
+  },
+  {
+    "path": "results/publication/all_tables/Table_Hausman.csv",
+    "size_bytes": 505
+  },
+  {
+    "path": "results/publication/all_tables/Table_Import_Balanced_PrePost.csv",
+    "size_bytes": 239
+  },
+  {
+    "path": "results/publication/all_tables/Table_PPML_HDFE.csv",
+    "size_bytes": 1299
+  },
+  {
+    "path": "results/publication/all_tables/Table_Panel_Robustness_Summary.csv",
+    "size_bytes": 3121
+  },
+  {
+    "path": "results/publication/all_tables/Table_RE_Core.csv",
+    "size_bytes": 1297
+  },
+  {
+    "path": "results/publication/figures/Figure_Balanced_PrePost_Export.png",
+    "size_bytes": 119107
+  },
+  {
+    "path": "results/publication/figures/Figure_Balanced_PrePost_Import.png",
+    "size_bytes": 117025
+  },
+  {
+    "path": "results/publication/figures/Figure_FE_Export.png",
+    "size_bytes": 91578
+  },
+  {
+    "path": "results/publication/figures/Figure_FE_Import.png",
+    "size_bytes": 94272
+  },
+  {
+    "path": "results/publication/figures/Figure_FE_RE_Comparison_Export.png",
+    "size_bytes": 155165
+  },
+  {
+    "path": "results/publication/figures/Figure_FE_RE_Comparison_Import.png",
+    "size_bytes": 158624
+  },
+  {
+    "path": "results/publication/figures/Figure_P3_Export_China_EventProfile.png",
+    "size_bytes": 150728
+  },
+  {
+    "path": "results/publication/figures/Figure_P3_Export_EU27_EventProfile.png",
+    "size_bytes": 169208
+  },
+  {
+    "path": "results/publication/figures/Figure_P3_Import_China_EventProfile.png",
+    "size_bytes": 147867
+  },
+  {
+    "path": "results/publication/figures/Figure_P3_Import_EU27_EventProfile.png",
+    "size_bytes": 162807
+  },
+  {
+    "path": "results/publication/figures/Figure_PPML_HDFE_Export.png",
+    "size_bytes": 87469
+  },
+  {
+    "path": "results/publication/figures/Figure_PPML_HDFE_Import.png",
+    "size_bytes": 88287
+  },
+  {
+    "path": "results/publication/tables/Table_EventProfiles.csv",
+    "size_bytes": 6088
+  },
+  {
+    "path": "results/publication/tables/Table_Export_Balanced_PrePost.csv",
+    "size_bytes": 237
+  },
+  {
+    "path": "results/publication/tables/Table_FE_Core.csv",
+    "size_bytes": 1303
+  },
+  {
+    "path": "results/publication/tables/Table_Hausman.csv",
+    "size_bytes": 505
+  },
+  {
+    "path": "results/publication/tables/Table_Import_Balanced_PrePost.csv",
+    "size_bytes": 239
+  },
+  {
+    "path": "results/publication/tables/Table_PPML_HDFE.csv",
+    "size_bytes": 1299
+  },
+  {
+    "path": "results/publication/tables/Table_Panel_Robustness_Summary.csv",
+    "size_bytes": 3121
+  },
+  {
+    "path": "results/publication/tables/Table_RE_Core.csv",
+    "size_bytes": 1297
+  },
+  {
+    "path": "results/tables/China_EU_change_correlation.csv",
+    "size_bytes": 142
+  },
+  {
+    "path": "results/tables/FINAL_CONSISTENCY_AUDIT.csv",
+    "size_bytes": 462
+  },
+  {
+    "path": "results/tables/HS6_export_prepost_changes.csv",
+    "size_bytes": 873665
+  },
+  {
+    "path": "results/tables/HS6_import_prepost_changes.csv",
+    "size_bytes": 1058125
+  },
+  {
+    "path": "results/tables/HS6_nonenergy_statistical_tests.csv",
+    "size_bytes": 1012
+  },
+  {
+    "path": "results/tables/HS6_statistical_tests.csv",
+    "size_bytes": 1750
+  },
+  {
+    "path": "results/tables/P1_FE_RE_all_coefficients.csv",
+    "size_bytes": 9104
+  },
+  {
+    "path": "results/tables/P1_export_balanced_partner_panel.csv",
+    "size_bytes": 78393
+  },
+  {
+    "path": "results/tables/P1_export_partner_FE.csv",
+    "size_bytes": 2300
+  },
+  {
+    "path": "results/tables/P1_export_partner_RE.csv",
+    "size_bytes": 2347
+  },
+  {
+    "path": "results/tables/P1_import_balanced_partner_panel.csv",
+    "size_bytes": 66262
+  },
+  {
+    "path": "results/tables/P1_import_partner_FE.csv",
+    "size_bytes": 2308
+  },
+  {
+    "path": "results/tables/P1_import_partner_RE.csv",
+    "size_bytes": 2359
+  },
+  {
+    "path": "results/tables/P2_Hausman_FE_vs_RE.csv",
+    "size_bytes": 505
+  },
+  {
+    "path": "results/tables/P3_HS6_event_profiles_all.csv",
+    "size_bytes": 6088
+  },
+  {
+    "path": "results/tables/P3_export_china_event_profile.csv",
+    "size_bytes": 1616
+  },
+  {
+    "path": "results/tables/P3_export_eu27_event_profile.csv",
+    "size_bytes": 1604
+  },
+  {
+    "path": "results/tables/P3_import_china_event_profile.csv",
+    "size_bytes": 1615
+  },
+  {
+    "path": "results/tables/P3_import_eu27_event_profile.csv",
+    "size_bytes": 1586
+  },
+  {
+    "path": "results/tables/P4_PPML_HDFE_all.csv",
+    "size_bytes": 1299
+  },
+  {
+    "path": "results/tables/P4_export_HS6_bloc_panel.parquet",
+    "size_bytes": 2038260
+  },
+  {
+    "path": "results/tables/P4_export_PPML_HDFE.csv",
+    "size_bytes": 700
+  },
+  {
+    "path": "results/tables/P4_import_HS6_bloc_panel.parquet",
+    "size_bytes": 2356729
+  },
+  {
+    "path": "results/tables/P4_import_PPML_HDFE.csv",
+    "size_bytes": 680
+  },
+  {
+    "path": "results/tables/PANEL_ROBUSTNESS_SUMMARY.csv",
+    "size_bytes": 3121
+  },
+  {
+    "path": "results/tables/R1_coverage_by_year.csv",
+    "size_bytes": 973
+  },
+  {
+    "path": "results/tables/R2_balanced_partner_robustness.csv",
+    "size_bytes": 6681
+  },
+  {
+    "path": "results/tables/R2_export_balanced_by_year.csv",
+    "size_bytes": 1484
+  },
+  {
+    "path": "results/tables/R2_import_balanced_by_year.csv",
+    "size_bytes": 1481
+  },
+  {
+    "path": "results/tables/R3_bop_denominator_bound.csv",
+    "size_bytes": 353
+  },
+  {
+    "path": "results/tables/R3_bop_exposure_gap_prepost.csv",
+    "size_bytes": 234
+  },
+  {
+    "path": "results/tables/R3_bop_exposure_gap_sensitivity.csv",
+    "size_bytes": 374
+  },
+  {
+    "path": "results/tables/R4_dependence_counts_balanced.csv",
+    "size_bytes": 1073
+  },
+  {
+    "path": "results/tables/R4_dependence_prepost_balanced.csv",
+    "size_bytes": 803
+  },
+  {
+    "path": "results/tables/R5_sign_decomposition.csv",
+    "size_bytes": 625
+  },
+  {
+    "path": "results/tables/R6_hs4_cluster_bootstrap.csv",
+    "size_bytes": 612
+  },
+  {
+    "path": "results/tables/R7_eu_to_china_absorption.csv",
+    "size_bytes": 210
+  },
+  {
+    "path": "results/tables/R8_export_energy_by_year.csv",
+    "size_bytes": 2596
+  },
+  {
+    "path": "results/tables/R8_export_energy_decomposition.csv",
+    "size_bytes": 1957
+  },
+  {
+    "path": "results/tables/T1_export_partner_shares.csv",
+    "size_bytes": 1096
+  },
+  {
+    "path": "results/tables/T1_import_partner_shares.csv",
+    "size_bytes": 1103
+  },
+  {
+    "path": "results/tables/T1_prepost_summary.csv",
+    "size_bytes": 763
+  },
+  {
+    "path": "results/tables/T2_concentration_summary.csv",
+    "size_bytes": 933
+  },
+  {
+    "path": "results/tables/T2_export_concentration_by_year.csv",
+    "size_bytes": 1046
+  },
+  {
+    "path": "results/tables/T2_import_concentration_by_year.csv",
+    "size_bytes": 1040
+  },
+  {
+    "path": "results/tables/T3_china_specificity.csv",
+    "size_bytes": 467
+  },
+  {
+    "path": "results/tables/T4_HS6_dependence_by_year.csv",
+    "size_bytes": 902
+  },
+  {
+    "path": "results/tables/T4_HS6_dependence_prepost.csv",
+    "size_bytes": 447
+  },
+  {
+    "path": "results/tables/T5_nonenergy_prepost.csv",
+    "size_bytes": 863
+  },
+  {
+    "path": "results/tables/T6_annual_energy_to_china.csv",
+    "size_bytes": 536
+  },
+  {
+    "path": "results/tables/T6_crude_oil_value_quantity.csv",
+    "size_bytes": 315
+  },
+  {
+    "path": "results/tables/T7_exposure_gap_by_year.csv",
+    "size_bytes": 2326
+  },
+  {
+    "path": "results/tables/T7_exposure_gap_prepost.csv",
+    "size_bytes": 491
+  },
+  {
+    "path": "results/tables/T8_best_breaks.csv",
+    "size_bytes": 568
+  },
+  {
+    "path": "results/tables/T8_break_screening.csv",
+    "size_bytes": 3034
+  }
+]

@@ -1,116 +1,88 @@
-# Russia Trade Re-Concentration — Final Reproducibility Repository v3.0
+# Russia Trade Re-Concentration after 2022
 
-This repository accompanies the manuscript by **Nak Hyun Jung (first author)** and **Taebeom Ahn (corresponding author)** on post-2022 Russian trade reorientation and partner re-concentration.
+Replication repository for the study **“Trade Reorientation and Partner Re-Concentration in Russia after 2022: China-Centered Import Re-Concentration, Export-Market Reorientation, and Longitudinal Panel Robustness.”**
 
-It contains both the **analysis code** and the **actual executed derivative outputs** used in the final Korean manuscript prepared for submission to *질서경제저널*.
+**Authors**
+- Nak Hyun Jung — first author
+- Taebeom Ahn — corresponding author
 
-## Recommended entry point
+Repository: https://github.com/nhjung-phd/russia-trade-reconcentration
 
-Use:
-
-`notebooks/Russia_Trade_Full_AllInOne.ipynb`
-
-A clean `Run all` performs the structural analysis and the additional panel robustness analysis in one workflow.
+> The repository is currently private during manuscript review. Access may be provided to editors and reviewers upon request.
 
 ## What is included
 
-### Structural analysis
-- Partner shares and concentration measures
-- HHI, CR1/CR3, Shannon entropy, effective number of partners
-- HS6 pre/post distributional analysis
-- Wilcoxon signed-rank tests
-- Bootstrap and sign-flip permutation tests
-- HS4-cluster bootstrap
-- Balanced-partner sensitivity
-- Bank of Russia denominator sensitivity
-- China-dependence thresholds
-- EU-to-China absorption diagnostics
-- Energy/non-energy decomposition
-- Bilateral trade-exposure-gap analysis
-
-### Panel robustness
-- Partner-year two-way fixed effects
-- Random effects
-- Hausman FE-vs-RE comparison
-- HS6 product fixed-effects year profiles
-- HS6 x partner-bloc PPML-HDFE with zero trade retained
-
-These panel models are used as **robustness checks**, not as a causal identification strategy for sanctions.
-
-## Final verified results
-
-Selected results from the executed outputs:
-
-- China share of Russian imports, BACI: **+29.80 pp**
-- Balanced-partner sensitivity: **+28.00 pp**
-- BoP-denominator sensitivity: **about +12.89 pp**
-- HS4-cluster bootstrap CI for the mean HS6 China-import-share change: **[22.54, 25.33] pp**
-- China share >= 90% HS6 products in the balanced sample: **143 -> 844**
-- Partner FE `China x Post`: **+30.49 pp (imports)** and **+19.82 pp (exports)**
-- Hausman: **chi-square(5)=74.99** for imports and **133.96** for exports, both p < .001
-- PPML-HDFE `China x Post`: **beta=1.6129** for imports and **beta=2.2320** for exports, both p < .001
-
-See `docs/RESULTS_SUMMARY.md` for interpretation and boundaries.
+- Final No-DID manuscript
+- Final No-DID All-in-One replication notebook
+- Executed notebook used for the archived results
+- Study-specific `Russia_BACI_Lite_Dataset.zip`
+- Actual statistical outputs, CSV tables, Excel workbooks, model summaries, and PNG figures
+- Publication-ready tables and figures
+- Reproducibility and data/code-availability documentation
 
 ## Repository structure
 
 ```text
-.
+russia-trade-reconcentration/
 ├── README.md
 ├── VERSION
-├── CITATION.md
 ├── CITATION.cff
 ├── requirements.txt
-├── .gitignore
 ├── SHA256SUMS.txt
-├── REPRODUCIBILITY_CHECKLIST.md
-│
 ├── data/
-│   └── README.md
-│
+│   ├── README.md
+│   └── Russia_BACI_Lite_Dataset.zip
 ├── notebooks/
-│   ├── Russia_Trade_Full_AllInOne.ipynb
-│   ├── Russia_Trade_Master_Structural.ipynb
-│   └── Russia_Trade_Panel_Robustness.ipynb
-│
+│   ├── Russia_Trade_Full_AllInOne_NoDID.ipynb
+│   └── Russia_Trade_Full_AllInOne_NoDID_executed.ipynb
 ├── manuscript/
-│   ├── Russia_Trade_Reconcentration_KR_Ordo_Final.docx
-│   └── assets/
-│
+│   └── Russia_Trade_Reconcentration_KR_Ordo_Final_NoDID.docx
 ├── results/
 │   ├── tables/
 │   ├── figures/
 │   ├── publication/
-│   ├── Russia_Trade_Master_Final_Results.xlsx
-│   ├── Russia_Trade_Master_Robustness_Results.xlsx
-│   └── Russia_Trade_Panel_Robustness_Results.xlsx
-│
+│   └── *.xlsx / model summaries / metadata
 └── docs/
-    ├── RUN_FULL_ANALYSIS_KR.md
-    └── RESULTS_SUMMARY.md
+    ├── DATA_AND_CODE_AVAILABILITY.md
+    ├── RESULTS_SUMMARY.md
+    └── REPRODUCIBILITY.md
 ```
 
 ## Data
 
-Raw CEPII BACI files are **not** redistributed here. See `data/README.md`.
+The study uses CEPII BACI HS2012 V202601 for 2015–2024. The repository contains a **study-specific Russia-focused derivative dataset**, not the full BACI archive. See `data/README.md`.
 
-The notebooks accept either the official `BACI_HS12_V202601.zip` source archive or the project Lite dataset. The repository includes only derivative outputs used in the manuscript.
+## Main analyses
 
-## Quick reproduction in Google Colab
+1. Partner shares and trade-concentration indices (HHI, CR1/CR3, Shannon entropy, effective number of partners)
+2. HS6-level pre/post distributional tests
+3. Balanced-partner and Bank of Russia denominator sensitivity
+4. HS4-cluster bootstrap and additional robustness checks
+5. Partner-year FE/RE and Hausman specification tests
+6. HS6 product fixed-effects year profiles
+7. HS6×partner-bloc PPML-HDFE
 
-1. Upload `notebooks/Russia_Trade_Full_AllInOne.ipynb` to Colab.
-2. Upload or mount `Russia_BACI_Lite_Dataset.zip` or the official `BACI_HS12_V202601.zip`.
-3. Select **Runtime -> Run all**.
-4. Compare the generated outputs with the checked-in `results/` directory.
+**No Difference-in-Differences analysis is included in the final source or reported results.**
 
-Detailed Korean instructions are in `docs/RUN_FULL_ANALYSIS_KR.md`.
+## Reproduce
 
-## Interpretation boundary
+See `docs/REPRODUCIBILITY.md`. The quickest route is to run the clean notebook with the included Lite dataset.
 
-This is a longitudinal structural study using repeated country- and product-level trade observations. It does not claim that the reported post-2022 changes are the pure causal effect of sanctions. War, sanctions, firm exit, Russian policy responses, energy prices, logistics, and payment disruptions changed simultaneously.
+## Key verified findings
 
-## Release
+- China import share: **+29.80 pp** in BACI-observed trade
+- Balanced-partner estimate: **+28.00 pp**
+- Official-denominator sensitivity: approximately **+12.89 pp**
+- Partner-year FE China×Post: **+30.49 pp imports**, **+19.82 pp exports**
+- Hausman tests favor FE for both import and export panels
+- PPML-HDFE confirms significant post-2022 relative shifts toward China versus EU27
 
-Repository release: **v3.0-final-results**
+See `docs/RESULTS_SUMMARY.md` for details and interpretation cautions.
 
-This release integrates the final manuscript and the actually executed panel-robustness outputs.
+## Data and Code Availability
+
+The full statement used for manuscript submission is in `docs/DATA_AND_CODE_AVAILABILITY.md`.
+
+## Review status
+
+This package is prepared for manuscript review. Keep the repository private until the journal's review and repository policies permit public release.
