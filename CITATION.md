@@ -2,8 +2,12 @@
 
 Please cite the associated manuscript when using this repository:
 
-**정낙현 · 배영한 · 안태범.** *Trade Reorientation and Partner Re-Concentration in Russia after 2022: China-Centered Import Re-Concentration, Export-Market Reorientation, and Asymmetric Trade Exposure.* Manuscript.
+**Nak Hyun Jung and Taebeom Ahn.** *Trade Reorientation and Partner Re-Concentration in Russia after 2022: China-Centered Import Re-Concentration, Export-Market Reorientation, and Trade-Exposure Gaps.* Manuscript prepared for submission to *질서경제저널*.
 
-Also cite the underlying CEPII BACI data source used in the analysis.
+Authors:
+- Nak Hyun Jung — first author
+- Taebeom Ahn — corresponding author
 
-The final journal name, volume, pages, and DOI should be added here after publication.
+Please also cite the underlying CEPII BACI data source and the Bank of Russia source used for the denominator-sensitivity analysis where relevant.
+
+Final journal bibliographic information and DOI should replace this manuscript citation after publication.

@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated manuscript and underlying data sources."
+title: "Russia Trade Re-Concentration: Reproducibility Repository"
+type: software
+authors:
+  - family-names: Jung
+    given-names: Nak Hyun
+  - family-names: Ahn
+    given-names: Taebeom
+version: "3.0"
+date-released: 2026-11-19
+preferred-citation:
+  type: article
+  title: "Trade Reorientation and Partner Re-Concentration in Russia after 2022: China-Centered Import Re-Concentration, Export-Market Reorientation, and Trade-Exposure Gaps"
+  authors:
+    - family-names: Jung
+      given-names: Nak Hyun
+    - family-names: Ahn
+      given-names: Taebeom
+  year: 2026
+  notes: "Manuscript prepared for submission to 질서경제저널."

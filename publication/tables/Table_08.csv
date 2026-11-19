@@ -1,5 +1,0 @@
-﻿Outcome,N,Mean Δpp,Median Δpp,Positive (%),Wilcoxon p,Bootstrap 95% CI,Perm. p,RBC
-Import non-energy: China,4842,+23.97,+17.45,73.8,< .001,"[23.10, 24.77]",< .001,+0.828
-Export non-energy: China,4868,+2.26,+0.00,28.8,0.015,"[1.89, 2.65]",< .001,+0.050
-Import non-energy: EU27,4842,-17.84,-11.68,20.1,< .001,"[-18.67, -16.92]",< .001,-0.666
-Export non-energy: EU27,4868,-6.50,-2.30,18.4,< .001,"[-7.08, -5.88]",< .001,-0.596

@@ -1,29 +1,32 @@
 # Reproducibility checklist
 
-- [x] Master analysis notebook included.
-- [x] Derived tables included.
-- [x] Derived figures included.
-- [x] Final and robustness Excel workbooks included.
-- [x] Analysis metadata included.
-- [x] Raw BACI data excluded.
-- [x] Input-data acquisition instructions included.
-- [x] Python package requirements included.
-- [x] Bank of Russia denominator vintage pinned in the notebook/manuscript.
-- [x] Reporting-coverage robustness outputs included.
-- [x] HS4-cluster bootstrap outputs included.
-- [x] BoP-denominator exposure-gap sensitivity included; interpretation limited to absolute percentage-point gap across denominator definitions.
-- [x] Final consistency-audit table included.
-- [x] Submission-ready manuscript included.
-- [x] Publisher/source verification record included for Kolaja (2026), Głodowska et al. (2026), Gutmann et al. (2024), and the Bank of Russia BoP source.
+- [x] Final manuscript included.
+- [x] Structural master notebook included.
+- [x] Panel robustness notebook included.
+- [x] Full integrated notebook included.
+- [x] Actual executed structural results included.
+- [x] Actual executed FE/RE and Hausman results included.
+- [x] Actual executed HS6 event-profile results included.
+- [x] Actual executed PPML-HDFE results included.
+- [x] Publication-ready CSV/Excel tables included.
+- [x] Publication-ready PNG figures included.
+- [x] Manuscript embedded images extracted for visual audit.
+- [x] Raw BACI archive excluded.
+- [x] Requirements file includes `pyarrow`, `linearmodels`, and `pyfixest`.
+- [x] Interpretation explicitly limits panel models to robustness analysis rather than causal identification.
+- [x] Checksums generated for repository files.
 
-## Before creating a public GitHub release
+## Clean reproduction
 
-1. Run the notebook from top to bottom in a clean Colab runtime using the intended BACI input.
-2. Confirm that `FINAL_CONSISTENCY_AUDIT.csv` reports the expected results.
-3. Confirm the generated BoP denominator and exposure-gap CSV files match the manuscript tables.
-4. Do not upload raw BACI archives.
-5. Add the final journal citation/DOI after acceptance/publication.
-
-- [x] `pyarrow` included for parquet I/O outside Colab.
-- [x] README and VERSION synchronized to v1.4-reproducibility.
-- [x] Master notebook automatically builds the Lite dataset from the official BACI archive when the Lite ZIP is absent.
+1. Obtain the official CEPII BACI input or the project Lite dataset.
+2. Create a fresh Python/Colab runtime.
+3. Install `requirements.txt`.
+4. Open `notebooks/Russia_Trade_Full_AllInOne.ipynb`.
+5. Upload/mount the data ZIP.
+6. Run all cells from top to bottom.
+7. Compare generated outputs with `results/`, especially:
+   - `results/publication/tables/`
+   - `results/publication/figures/`
+   - `results/Russia_Trade_Master_Final_Results.xlsx`
+   - `results/Russia_Trade_Master_Robustness_Results.xlsx`
+   - `results/Russia_Trade_Panel_Robustness_Results.xlsx`

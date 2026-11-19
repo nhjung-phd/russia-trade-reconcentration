@@ -1,0 +1,3 @@
+side,terms_compared,hausman_chi2,df,p_value,interpretation
+Import,"china_post, india_post, turkiye_post, kazakhstan_post, eu27_post",74.98737373272768,5,9.35956652356613e-15,"Small p favors FE over RE, but treat as a model-comparison diagnostic rather than causal identification."
+Export,"china_post, india_post, turkiye_post, kazakhstan_post, eu27_post",133.96080682531561,5,3.433640948765778e-27,"Small p favors FE over RE, but treat as a model-comparison diagnostic rather than causal identification."

@@ -1,0 +1,40 @@
+                          PanelOLS Estimation Summary                           
+================================================================================
+Dep. Variable:            china_share   R-squared:                        0.3047
+Estimator:                   PanelOLS   R-squared (Between):              0.0000
+No. Observations:               46120   R-squared (Within):               0.3047
+Date:                Thu, Nov 19 2026   R-squared (Overall):              0.1202
+Time:                        11:56:02   Log-likelihood                 1.904e+04
+Cov. Estimator:             Clustered                                           
+                                        F-statistic:                      2021.1
+Entities:                        4612   P-value                           0.0000
+Avg Obs:                      10.0000   Distribution:                 F(9,41499)
+Min Obs:                      10.0000                                           
+Max Obs:                      10.0000   F-statistic (robust):             139.61
+                                        P-value                           0.0000
+Time periods:                      10   Distribution:                 F(9,41499)
+Avg Obs:                       4612.0                                           
+Min Obs:                       4612.0                                           
+Max Obs:                       4612.0                                           
+                                                                                
+                             Parameter Estimates                              
+==============================================================================
+            Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
+------------------------------------------------------------------------------
+const          0.2376     0.0021     113.21     0.0000      0.2335      0.2417
+year_2015     -0.0284     0.0038    -7.5839     0.0000     -0.0358     -0.0211
+year_2016     -0.0269     0.0034    -7.8224     0.0000     -0.0337     -0.0202
+year_2017     -0.0251     0.0029    -8.7275     0.0000     -0.0308     -0.0195
+year_2018     -0.0197     0.0025    -7.7243     0.0000     -0.0247     -0.0147
+year_2019     -0.0129     0.0021    -6.1408     0.0000     -0.0171     -0.0088
+year_2020     -0.0074     0.0019    -3.9747     0.0001     -0.0111     -0.0038
+year_2022      0.1219     0.0043     28.060     0.0000      0.1134      0.1304
+year_2023      0.2184     0.0067     32.357     0.0000      0.2051      0.2316
+year_2024      0.2658     0.0078     34.250     0.0000      0.2506      0.2810
+==============================================================================
+
+F-test for Poolability: 19.882
+P-value: 0.0000
+Distribution: F(4611,41499)
+
+Included effects: Entity
