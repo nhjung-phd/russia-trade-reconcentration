@@ -1,10 +1,10 @@
 pandas
 numpy
-scipy
 matplotlib
+scipy
 statsmodels
-pyarrow
-openpyxl
 tqdm
 linearmodels
 pyfixest
+openpyxl
+pyarrow

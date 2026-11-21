@@ -1,12 +1,10 @@
 cff-version: 1.2.0
 message: "If you use this replication package, please cite the associated manuscript."
-title: "Russia Trade Re-Concentration after 2022: Replication Package"
-type: dataset
+title: "Russia Trade Structure Restructuring: Replication Package"
 authors:
-  - family-names: "Jung"
-    given-names: "Nak Hyun"
-  - family-names: "Ahn"
-    given-names: "Taebeom"
+  - family-names: Jung
+    given-names: Nak Hyun
+  - family-names: Ahn
+    given-names: Taebum
+version: 2.0.0
 repository-code: "https://github.com/nhjung-phd/russia-trade-reconcentration"
-version: "4.0-final-nodid"
-date-released: 2026-11-19

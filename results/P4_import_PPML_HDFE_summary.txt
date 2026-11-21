@@ -1,1 +1,0 @@
-<pyfixest.estimation.models.fepois_.Fepois object at 0x781e9eac12b0>
