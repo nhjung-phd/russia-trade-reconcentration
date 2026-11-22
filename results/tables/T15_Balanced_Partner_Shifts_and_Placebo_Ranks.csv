@@ -1,0 +1,9 @@
+partner,partner_code,pre_mean_share_pct,post_mean_share_pct,shift_pp,placebo_rank_p_two_sided,placebo_percentile,note,side
+China,156,26.468688980602817,54.46966276596821,28.00097378536539,0.009708737864077669,100.0,Descriptive placebo-rank comparison across balanced partners; not a causal p-value.,import
+India,699,1.6436947508134685,2.1662872501661523,0.5225924993526837,0.22330097087378642,94.11764705882352,Descriptive placebo-rank comparison across balanced partners; not a causal p-value.,import
+Türkiye,792,2.3733930338517535,4.684599653258028,2.3112066194062737,0.05825242718446602,99.01960784313725,Descriptive placebo-rank comparison across balanced partners; not a causal p-value.,import
+Kazakhstan,398,2.6672978913915584,4.699608181079315,2.0323102896877563,0.07766990291262135,98.0392156862745,Descriptive placebo-rank comparison across balanced partners; not a causal p-value.,import
+China,156,16.062903636097296,33.46271334382385,17.39980970772655,0.008264462809917356,100.0,Descriptive placebo-rank comparison across balanced partners; not a causal p-value.,export
+India,699,1.9004480306690583,17.151112872636272,15.250664841967213,0.01652892561983471,99.16666666666667,Descriptive placebo-rank comparison across balanced partners; not a causal p-value.,export
+Türkiye,792,4.488585800991237,7.347998312267899,2.8594125112766613,0.06611570247933884,98.33333333333334,Descriptive placebo-rank comparison across balanced partners; not a causal p-value.,export
+Kazakhstan,398,4.02647779877473,4.455296900654856,0.4288191018801263,0.23140495867768596,92.5,Descriptive placebo-rank comparison across balanced partners; not a causal p-value.,export

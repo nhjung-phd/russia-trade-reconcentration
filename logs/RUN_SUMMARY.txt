@@ -1,0 +1,8 @@
+Russia trade corrected reanalysis completed.
+France code used: 251
+Italy code resolved from input data: 380
+EU27 member count: 27
+Main pre-period: [2019, 2020, 2021]
+Adjustment year excluded: 2022
+Main post-period: [2023, 2024]
+All figures are saved without internal top titles.

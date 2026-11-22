@@ -1,10 +1,12 @@
 cff-version: 1.2.0
-message: "If you use this replication package, please cite the associated manuscript."
-title: "Russia Trade Structure Restructuring: Replication Package"
+message: "If you use this software or replication package, please cite the archived release."
+title: "Russia Trade Structure Restructuring: Reproducibility Package"
+type: software
+version: "1.1.0"
 authors:
   - family-names: Jung
     given-names: Nak Hyun
   - family-names: Ahn
     given-names: Taebum
-version: 2.0.0
 repository-code: "https://github.com/nhjung-phd/russia-trade-reconcentration"
+doi: "10.5281/zenodo.24412588"
