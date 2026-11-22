@@ -1,15 +1,35 @@
-# Data files
+# Data inputs
 
-## Russia_BACI_Lite_Dataset.zip
+This release **includes** `Russia_BACI_Lite_Dataset.zip` as the compact executable input for the analysis notebook.
 
-Study-specific light analytical dataset used by the reproducibility code.
+## Included ZIP contents
 
-Expected contents include Russia import/export partner-HS6-year data and China world-trade yearly data required by the analysis.
+| File | Purpose |
+|---|---|
+| `russia_import_partner_hs6_year.parquet` | Russian imports by partner, HS6, and year |
+| `russia_export_partner_hs6_year.parquet` | Russian exports by partner, HS6, and year |
+| `russia_import_hs6_year_summary.parquet` | Import HS6-year summary |
+| `russia_export_hs6_year_summary.parquet` | Export HS6-year summary |
+| `china_world_trade_year.parquet` | China world-trade totals used in bilateral-exposure calculations |
+| `metadata.json` | Source/version/year metadata |
 
-## Russia_HS6_Full_Product_List_Study_v1.1_Final.csv
+For the partner-HS6-year files the notebook normalizes `year`, `partner`, `hs6`, and `value_kUSD`, and derives HS2/HS4 identifiers as needed.
 
-Study HS6 product list used for product-level interpretation and code lookup.
+## Provenance recorded in metadata
 
-## Data-source notice
+- Source: **CEPII BACI HS2012 V202601**
+- Years: **2015–2024**
 
-The underlying source is CEPII BACI V202601 / HS2012. This repository package includes a derived/light analytical dataset for reproducibility. Before public redistribution, confirm that the intended repository use complies with the data provider's current licensing and redistribution terms. The source provider remains authoritative for the original data.
+The ZIP is a compact author-prepared analysis input, not the complete CEPII BACI source distribution.
+
+## Execution
+
+In Google Colab, upload the ZIP to:
+
+`/content/Russia_BACI_Lite_Dataset.zip`
+
+For local execution, point the analysis root to the repository `data/` directory or copy the ZIP to the notebook's configured root.
+
+## Redistribution
+
+The file is included in this package at the author's request for reproducibility. The full BACI source dataset is not included. Before publicly redistributing this compact derivative dataset, review the source provider's applicable license and attribution requirements.

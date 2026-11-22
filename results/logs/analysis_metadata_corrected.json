@@ -89,5 +89,6 @@
   ],
   "panel_inference": "descriptive balanced-panel shifts with placebo-rank comparison; conventional singleton-treatment p-values are not primary evidence",
   "PPML": "auxiliary; HS6×bloc and HS6×year fixed effects; EU27 reference",
+  "FE_robustness": "partner-year two-way fixed effects using 2019-2021 vs 2023-2024; 2022 excluded; coefficients interpreted descriptively, not causally",
   "figure_titles_inside_images": false
 }

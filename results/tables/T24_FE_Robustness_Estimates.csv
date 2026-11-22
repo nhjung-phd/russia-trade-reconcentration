@@ -1,0 +1,11 @@
+side,interaction,coefficient_share,coefficient_percentage_points,pre_period,post_period,adjustment_year_excluded,interpretation
+Import,China × Post,0.2815220414482242,28.152204144822417,2019-2021,2023-2024,2022,Descriptive fixed-effects robustness estimate; not interpreted as a causal treatment effect.
+Import,India × Post,0.006738228588098426,0.6738228588098426,2019-2021,2023-2024,2022,Descriptive fixed-effects robustness estimate; not interpreted as a causal treatment effect.
+Import,Türkiye × Post,0.02462436978863456,2.462436978863456,2019-2021,2023-2024,2022,Descriptive fixed-effects robustness estimate; not interpreted as a causal treatment effect.
+Import,Kazakhstan × Post,0.021835406491449206,2.1835406491449207,2019-2021,2023-2024,2022,Descriptive fixed-effects robustness estimate; not interpreted as a causal treatment effect.
+Import,EU27 × Post,-0.006627880595389479,-0.6627880595389479,2019-2021,2023-2024,2022,Descriptive fixed-effects robustness estimate; not interpreted as a causal treatment effect.
+Export,China × Post,0.1750285318741061,17.50285318741061,2019-2021,2023-2024,2022,Descriptive fixed-effects robustness estimate; not interpreted as a causal treatment effect.
+Export,India × Post,0.15353708321651352,15.353708321651352,2019-2021,2023-2024,2022,Descriptive fixed-effects robustness estimate; not interpreted as a causal treatment effect.
+Export,Türkiye × Post,0.029624559909608147,2.9624559909608146,2019-2021,2023-2024,2022,Descriptive fixed-effects robustness estimate; not interpreted as a causal treatment effect.
+Export,Kazakhstan × Post,0.0053186258156427526,0.5318625815642752,2019-2021,2023-2024,2022,Descriptive fixed-effects robustness estimate; not interpreted as a causal treatment effect.
+Export,EU27 × Post,-0.008845414459186813,-0.8845414459186813,2019-2021,2023-2024,2022,Descriptive fixed-effects robustness estimate; not interpreted as a causal treatment effect.

@@ -1,109 +1,108 @@
-# Russia Trade Restructuring: Full Reproducibility Package
+# Russia Trade Re-Concentration — Reproducibility Package
 
-[![DOI](https://zenodo.org/badge/1462838898.svg)](https://doi.org/10.5281/zenodo.24412588)
+This repository contains the corrected analysis code, compact analysis dataset, derived tables, figures, and reproducibility documentation for the Russia trade re-concentration study. The manuscript file itself is intentionally **not included**.
 
-This repository contains the full reproducibility package for the study of Russia's post-2022 trade restructuring, trade-partner concentration, and HS6 product composition.
+The analysis is **descriptive and longitudinal, not a causal identification design**. The principal comparison is 2019–2021 versus 2023–2024, with 2022 treated as an adjustment year.
 
-## Version
+## Key corrected findings
 
-Repository package version: **1.1.0**
+- Russia import country-level HHI: **0.0827 → 0.2987**.
+- Russia import EU27-bloc HHI: **0.1950 → 0.3260**.
+- Russia export country-level HHI: **0.0471 → 0.1488**.
+- Russia export EU27-bloc HHI: **0.1573 → 0.1604**; in the balanced sample it declined **0.1857 → 0.1658**.
+- China share of Russian imports: **23.86% → 53.65%**.
+- Bank of Russia denominator sensitivity: **22.90% → 37.03%**, or **+14.13 pp**.
+- Partner–year FE robustness: China × Post **+28.15 pp** for imports and **+17.50 pp** for exports; India × Post **+15.35 pp** for exports.
+- Revised import PPML-HDFE did **not** converge within 1,000 demeaning iterations and is not used as supporting evidence; export PPML-HDFE is auxiliary only.
 
-The DOI badge points to the Zenodo **Concept DOI** so that it continues to resolve to the latest archived release. A new Zenodo Version DOI should be recorded after the corrected v1.1.0 GitHub release is archived.
-
-## Main analytical corrections in v1.1.0
-
-- France is coded as **251** in the analytical BACI/Comtrade country coding used here.
-- Italy is detected from the actual input data as **380 or 381** rather than assumed.
-- EU27 is checked to contain exactly 27 members.
-- Country-level concentration and EU27-as-one-bloc concentration are reported in parallel.
-- The main comparison is consistently **2019-2021 vs 2023-2024**.
-- **2022 is excluded** from the main pre/post comparison and treated as an adjustment year.
-- Bank of Russia denominator sensitivity uses the same 2019-2021 pre-window where possible.
-- Conventional singleton-country FE p-values and Hausman tests are not treated as primary evidence.
-- Revised PPML-HDFE is retained only as an auxiliary specification.
-
-## Important PPML note
-
-In the corrected v2.1 run, the revised **import PPML-HDFE did not converge** (`Demeaning failed after 1000 iterations`). This failure is preserved in the output package and must not be replaced with an invented estimate. Export PPML output is retained as an auxiliary result. The main conclusions should rely on the concentration, HS6, balanced-sample, and denominator-sensitivity evidence.
+The machine-readable key-result summary is in `results/tables/T23_Manuscript_Key_Results_Summary.csv`; FE results are in `results/tables/T24_FE_Robustness_Estimates.csv`.
 
 ## Repository structure
 
 ```text
 .
 ├── README.md
+├── README_KR.md
 ├── CITATION.cff
-├── VERSION
 ├── requirements.txt
-├── SHA256SUMS.txt
-├── src/
-│   └── russia_trade_reanalysis.py
-├── notebooks/
-│   └── Russia_Trade_Reanalysis_Colab.ipynb
-├── config/
-│   └── country_code_reference_used.csv
+├── environment.yml
+├── code/
+│   ├── Russia_Trade_Corrected_Reanalysis_v2_4_FE_Fixed_Colab.ipynb
+│   └── verify_release_outputs.py
 ├── data/
 │   ├── Russia_BACI_Lite_Dataset.zip
-│   ├── Russia_HS6_Full_Product_List_Study_v1.1_Final.csv
 │   └── README.md
 ├── results/
 │   ├── tables/
+│   ├── figures/
+│   ├── logs/
 │   ├── workbooks/
-│   ├── OUTPUT_MANIFEST.csv
-│   └── README.md
-├── figures/
-├── logs/
-├── docs/
-└── archives/
-    └── Russia_Trade_Corrected_Reanalysis_Outputs_v2_1.zip
+│   └── OUTPUT_MANIFEST.csv
+└── docs/
+    ├── CODEBOOK.md
+    ├── REPRODUCIBILITY.md
+    ├── RESULTS.md
+    ├── CHANGELOG.md
+    ├── LICENSE_NOTICE.md
+    └── SHA256SUMS.txt
 ```
 
-## Input data
+## Included analysis dataset
 
-The reproducibility input is:
+`data/Russia_BACI_Lite_Dataset.zip` is included in this release. It contains the compact inputs required by the notebook:
 
-`data/Russia_BACI_Lite_Dataset.zip`
+- `russia_import_partner_hs6_year.parquet`
+- `russia_export_partner_hs6_year.parquet`
+- `russia_import_hs6_year_summary.parquet`
+- `russia_export_hs6_year_summary.parquet`
+- `china_world_trade_year.parquet`
+- `metadata.json`
 
-The package contains the study-specific light analytical dataset used by the code. The original source is CEPII BACI V202601 / HS2012. See `data/README.md` and `docs/DATA_NOTICE.md` before public redistribution.
+The metadata identifies the source as **CEPII BACI HS2012 V202601**, covering 2015–2024. This is a compact analysis dataset, not the complete CEPII BACI distribution.
 
-## How to reproduce in Google Colab
+## Quick start — Google Colab
 
-1. Open `notebooks/Russia_Trade_Reanalysis_Colab.ipynb` in Google Colab.
-2. Upload `data/Russia_BACI_Lite_Dataset.zip` to `/content/`.
-3. Run the notebook cells in order.
-4. The notebook creates tables, figures, logs, a combined Excel workbook, and a final ZIP.
-5. The final output archive is named:
+1. Download or clone this repository.
+2. Upload `data/Russia_BACI_Lite_Dataset.zip` to `/content/`, preserving the filename `Russia_BACI_Lite_Dataset.zip`.
+3. Open `code/Russia_Trade_Corrected_Reanalysis_v2_4_FE_Fixed_Colab.ipynb`.
+4. Choose **Runtime → Run all**.
+5. Compare generated outputs with `results/` and run `code/verify_release_outputs.py` for the release checks.
 
-`Russia_Trade_Corrected_Reanalysis_Outputs_v2_1.zip`
+Expected Colab input path:
 
-## Key result tables
+```text
+/content/Russia_BACI_Lite_Dataset.zip
+```
 
-- `T01_Country_and_EU27_Bloc_Concentration_by_Year.csv` — annual country- and bloc-level concentration measures.
-- `T02_Country_and_EU27_Bloc_Concentration_PrePost.csv` — main concentration pre/post summary.
-- `T04_Major_Partner_Group_Shares_PrePost.csv` — corrected partner-group shares including corrected EU27.
-- `T06_HS6_Distributional_Statistics.csv` — HS6 distributional changes and inference.
-- `T08_EU27_China_HS6_CoMovement_Summary.csv` — EU27 decline / China increase co-movement summary.
-- `T15_Balanced_Partner_Shifts_and_Placebo_Ranks.csv` — balanced-panel focal-partner shifts and placebo ranks.
-- `T16_Balanced_Country_and_EU27_Bloc_Concentration_PrePost.csv` — balanced-sample concentration sensitivity.
-- `T19_Bank_of_Russia_Denominator_Sensitivity_PrePost.csv` — Bank of Russia denominator sensitivity using aligned pre/post periods.
-- `T20_HS6_Balanced_Year_Profiles_All_Focal_Groups.csv` — longitudinal HS6 profiles.
-- `T21_Revised_PPML_HDFE_Import.csv` / `T22_Revised_PPML_HDFE_Export.csv` — auxiliary PPML outputs; see convergence note above.
-- `T23_Manuscript_Key_Results_Summary.csv` — compact manuscript-facing key results.
+For local execution, see `docs/REPRODUCIBILITY.md`.
 
-## Figures
+## Critical data-definition notes
 
-All figures are stored in `figures/`. Figure images deliberately contain **no title at the top**. Their filenames identify their content. Axis labels, legends, and reference lines remain inside the images.
+- Main pre-period: **2019–2021**.
+- Adjustment year: **2022**, excluded from the principal pre/post comparison.
+- Main post-period: **2023–2024**.
+- EU27 uses the current 27-member composition consistently over 2015–2024.
+- France is represented by BACI/Comtrade customs-area code **251** in the supplied Lite dataset and is included in EU27.
+- United Kingdom is excluded from EU27.
+- Italy is resolved at runtime from candidate codes **380/381** according to the input dataset.
+- FE coefficients are descriptive robustness estimates, not causal treatment effects.
 
-## HS6 product list
+## Reproducing the release checks
 
-`data/Russia_HS6_Full_Product_List_Study_v1.1_Final.csv` contains the study's HS6 product list and product descriptions for transparent product-level inspection.
+From the repository root:
 
-## Reproducibility metadata
+```bash
+python code/verify_release_outputs.py
+```
 
-- `logs/analysis_metadata_corrected.json` records the design settings used in the corrected run.
-- `logs/RUN_SUMMARY.txt` records the country-code and period configuration.
-- `results/OUTPUT_MANIFEST.csv` lists the generated outputs.
-- `SHA256SUMS.txt` provides file hashes for integrity checking.
+The supplied release is expected to reproduce, within normal floating-point precision, the key values documented in `docs/REPRODUCIBILITY.md`.
+
+## Data and redistribution note
+
+This repository includes the author-prepared compact analysis ZIP supplied for reproducibility. It does **not** include the complete CEPII BACI source distribution. Before public redistribution, users should review the source provider's applicable terms; see `data/README.md` and `docs/LICENSE_NOTICE.md`.
 
 ## Citation
 
-For GitHub, use the Concept DOI badge above. After Zenodo archives the corrected v1.1.0 release, use that release's **Version DOI** in the manuscript when citing the exact replication snapshot.
+Use `CITATION.cff` for machine-readable citation metadata. The replication-package DOI recorded in the project is:
+
+**10.5281/zenodo.24412589**
